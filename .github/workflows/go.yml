@@ -30,8 +30,8 @@ jobs:
       run: |
         for exercicio in $EXERCICIOS; do echo "-_-_-_-_-_-_-_-" ; \
         echo " " ; \
-        echo "Rodando exercício $exercicio" ; \
+        echo "RODANDO EXERCÍCIO $exercicio" ; \
         echo " " ; \
-        go run $exercicio ; done
+        go run $exercicio ; echo " " ; done
         # echo " " ; \
         
