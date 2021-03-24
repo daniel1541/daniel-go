@@ -22,4 +22,5 @@ jobs:
     #  run: go build -v ./exercicios/*.go
 
     - name: Run
-      run: go run ./exercicios/*.go
+      run: |
+      for exercicio in exercicios/*.go; do go run ./exercicios/*.go; done
