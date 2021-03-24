@@ -28,5 +28,5 @@ jobs:
       env:
         EXERCICIOS: exercicios/*.go
       run: |
-        for exercicio in $EXERCICIOS; do echo "Rodando exercício $exercicio"; go run $exercicio; done
+        for exercicio in $EXERCICIOS; do cowsay "Rodando exercício $exercicio"; go run $exercicio; done
       #for exercicio in exercicios/*.go; do go run ./exercicios/*.go; done
