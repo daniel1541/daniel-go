@@ -22,11 +22,16 @@ jobs:
       uses: Code-Hex/neo-cowsay-action@v1
       with:
         message: 'Hora de rodar nossos exercícios...'
-        cow: 'gopher' # ascii art list: https://github.com/Code-Hex/Neo-cowsay/tree/master/cows
+        cow: 'gopher'
 
     - name: Run
       env:
         EXERCICIOS: exercicios/*.go
       run: |
-        for exercicio in $EXERCICIOS; do cowsay "Rodando exercício $exercicio"; go run $exercicio; done
-      #for exercicio in exercicios/*.go; do go run ./exercicios/*.go; done
+        for exercicio in $EXERCICIOS; do echo "-_-_-_-_-_-_-_-"; \
+        echo "";\
+        echo "Rodando exercício $exercicio";\
+        echo "";\
+        go run $exercicio;\ 
+        echo "";\
+        done
