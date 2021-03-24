@@ -18,12 +18,15 @@ jobs:
       with:
         go-version: 1.15
 
-    #- name: Build
-    #  run: go build -v ./exercicios/*.go
+    - name: output pipeline
+      uses: Code-Hex/neo-cowsay-action@v1
+      with:
+        message: 'Hora de rodar nossos exercícios...'
+        cow: 'gopher' # ascii art list: https://github.com/Code-Hex/Neo-cowsay/tree/master/cows
 
     - name: Run
       env:
         EXERCICIOS: exercicios/*.go
       run: |
-        for exercicio in $EXERCICIOS; do go run $exercicio; done
+        for exercicio in $EXERCICIOS; do echo "Rodando exercício `$exercicio`"; go run $exercicio; done
       #for exercicio in exercicios/*.go; do go run ./exercicios/*.go; done
