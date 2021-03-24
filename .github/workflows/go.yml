@@ -28,10 +28,10 @@ jobs:
       env:
         EXERCICIOS: exercicios/*.go
       run: |
-        for exercicio in $EXERCICIOS; do echo "-_-_-_-_-_-_-_-"; \
-        echo " "; \
-        echo "Rodando exercício $exercicio"; \
-        echo " "; \
-        go run $exercicio; \ 
-        # echo " "; \
-        done
+        for exercicio in $EXERCICIOS; do echo "-_-_-_-_-_-_-_-" ; \
+        echo " " ; \
+        echo "Rodando exercício $exercicio" ; \
+        echo " " ; \
+        go run $exercicio ; done
+        # echo " " ; \
+        
