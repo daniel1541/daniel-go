@@ -33,5 +33,5 @@ jobs:
         echo "Rodando exercício $exercicio"; \
         echo " "; \
         go run $exercicio; \ 
-        echo " "; \
+        # echo " "; \
         done
