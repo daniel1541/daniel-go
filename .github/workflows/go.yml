@@ -29,9 +29,9 @@ jobs:
         EXERCICIOS: exercicios/*.go
       run: |
         for exercicio in $EXERCICIOS; do echo "-_-_-_-_-_-_-_-"; \
-        echo "";\
-        echo "Rodando exercício $exercicio";\
-        echo "";\
-        go run $exercicio;\ 
-        echo "";\
+        echo " "; \
+        echo "Rodando exercício $exercicio"; \
+        echo " "; \
+        go run $exercicio; \ 
+        echo " "; \
         done
