@@ -10,3 +10,22 @@
 // a. Imprima os valores de cada variável
 // b. O compilador atribuiu um valor para cada variável. Como esse
 // valor se chama?
+// R: Valor Zero. 
+
+package main
+
+import (
+	"fmt"
+)
+
+var x int
+var y string
+var z bool
+
+func main() {
+	
+	fmt.Println("o Valor zero de x:", x)
+	fmt.Println("o Valor zero de y:", y)
+	fmt.Println("o Valor zero de z:", z)
+
+}
