@@ -3,7 +3,7 @@
 // crie uma VARIÁVEL com o IDENTIFICADOR "y". A variável
 // deverá ser do tipo original ou que dá origem ao SEU TIPO
 // criado anteriormente.
-// 
+//
 // 2. na função main:
 // 	a. isto já deverá estar feito:
 // 		i. imprimir o valor de "x"
@@ -25,7 +25,6 @@ type beer int
 
 var x beer
 var y int
-
 
 func main() {
 
