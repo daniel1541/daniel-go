@@ -8,3 +8,20 @@
 // 	b. imprima o tipo da variável "x"
 // 	c. atribua 42 para a variável "x" utilizando o operador "="
 // 	d. imprima o valor da variável "x"
+package main
+
+import (
+	"fmt"
+)
+
+type beer int
+
+var x beer
+
+func main() {
+
+	fmt.Println("Valor de X:", x)
+	fmt.Printf("Tipo de X: %T\n", x)
+	x = 42
+	fmt.Println("Novo valor de X:", x)
+}

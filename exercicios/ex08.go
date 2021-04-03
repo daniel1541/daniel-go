@@ -15,3 +15,23 @@
 // 		de "x" para o tipo original de seu TIPO.
 // 		ii. Atribuir este valor a "y".
 // 		iii. Imprima o tipo de "y".
+package main
+
+import (
+	"fmt"
+)
+
+type beer int
+
+var x beer
+var y int
+
+
+func main() {
+
+	fmt.Println("Valor de X:", x)
+	fmt.Printf("Tipo de X: %T\n", x)
+	x = 42
+	y = int(x)
+	fmt.Println("Novo valor de Y:", y)
+}
