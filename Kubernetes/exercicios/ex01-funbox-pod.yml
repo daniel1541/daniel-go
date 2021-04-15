@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: myapp
+  labels:
+    name: myapp_daniel
+spec:
+  containers:
+  - name: container
+    image: ewernight/funbox
+    resources:
+      limits:
+        memory: "128Mi"
+        cpu: "500m"

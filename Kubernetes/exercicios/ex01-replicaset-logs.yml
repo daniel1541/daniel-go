@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: ReplicaSet
+metadata:
+  name: logs-replicasets
+  labels:
+    name: app-logs
+    type: logs
+spec:
+  replicas: 6
+  selector:
+    matchLabels:
+      type: log-redis-pod
+  template:
+    metadata:
+      labels:
+        name: logredis
+        type: log-redis-pod
+    spec:
+      containers:
+      - name: log-redis
+        image: redis
