@@ -17,3 +17,14 @@ jobs:
           kubectl get pods -n kube-system
           echo "current-context:" $(kubectl config current-context)
           echo "environment-kubeconfig:" ${KUBECONFIG}
+      
+      - name: Run
+      env:
+        EXERCICIOSK8S: Kubernetes/exercicios/*.yml
+      run: |
+        for exercicio in $EXERCICIOSK8S; do echo "-_-_-_-_-_-_-_-" ; \
+        echo " " ; \
+        echo "RODANDO EXERCÍCIO $exercicio" ; \
+        echo " " ; \
+        kubectl create -f $exercicio ; echo " " ; done
+        # echo " " ; \
