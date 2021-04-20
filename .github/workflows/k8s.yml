@@ -26,4 +26,5 @@ jobs:
           echo "RODANDO EXERCÍCIO $exercicio" ; \
           echo " " ; \
           kubectl create -f $exercicio ; echo " " ; done
-          # echo " " ; \
+          echo " " ; \
+          kubectl get all
