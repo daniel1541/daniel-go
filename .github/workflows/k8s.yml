@@ -25,9 +25,9 @@ jobs:
           echo " " ; \
           echo "RODANDO EXERCÍCIO $exercicio" ; \
           echo " " ; \
-          kubectl create -f $exercicio ; echo " " ; done
+          kubectl create -f $exercicio ; sleep 5s ; echo " " ; done
           echo " " ; \
-          sleep 15s ; \
+          sleep 25s ; \
           echo "ESTADO GERAL DO CLUSTER:" ; \
           echo " " ; \
           kubectl get all
